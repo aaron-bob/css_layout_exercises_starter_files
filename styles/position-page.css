@@ -2,46 +2,55 @@ nav {
 	position: fixed;
 	padding: 0 60px;
 	background-color: gray;
-	height: 100px;
+	height: 60px;
 	width: 100%;
 }
 
 nav img {
-	position: relative;
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	margin: 10px 0;
+	width: 50px;
+	height: 50px;
+	margin: 5px 0;
 	border-radius: 50%;
 	border: 1px solid black;
+	vertical-align: middle;
 }
 
-ul { 
-	position: relative;
+nav ul { 
 	display: inline-block;
 	text-align: center;
-	bottom: 45px;
+	list-style: none;
 }
 
-li {
+nav li {
 	display: inline-block;
-	margin-right: 10px;
-	color: purple;
-
 }
 
 a {
 	color: purple;
 }
 
+nav li a:hover {
+	color: black;
+}
+
 nav ul li::after {
-	margin-left: 10px;
+	margin-left: 5px;
 	content: "|"
+}
+
+body {
+	background: url(../images/outerspace_landscape.jpeg) no-repeat;
+	background-size: cover;
+}
+
+main {
+	padding-top: 90px; 
+	min-width: 1000px;
 }
  
 .greenbox {
 	position: relative;
-	top: 250px;
+	top: 120px;
 	border: 10px green dotted;
 	width: 600px;
 	height: 300px;
@@ -55,8 +64,8 @@ nav ul li::after {
 }
 
 .spacecat {
-	top: -100px;
-	left: -100px;
+	top: -90px;
+	left: -90px;
 }
 
 .spacedog {
