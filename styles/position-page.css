@@ -1,1 +1,40 @@
+nav {
+	position: fixed;
+	padding: 0 60px;
+	background-color: gray;
+	height: 100px;
+	width: 100%;
+}
 
+img {
+	position: relative;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 10px 0;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+ul { 
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	bottom: 45px;
+}
+
+li {
+	display: inline-block;
+	margin-right: 10px;
+	color: purple;
+
+}
+
+a {
+	color: purple;
+}
+
+nav ul li::after {
+	margin-left: 10px;
+	content: "|"
+}
